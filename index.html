@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap">
+</head>
+<body class="search-init">
+<!--=========================
+          Navbar
+=============================-->
+<div class="navbar" id="navbar">
+
+  <div class="More">
+    <label class="hamburger" id="hamburgerIcon" for="menuToggle">
+      <div class="hamburger-content">
+        <svg viewBox="0 0 32 32">
+          <path class="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"/>
+          <path class="line" d="M7 16 27 16"/>
+        </svg>
+        <span class="Menu-Text">Menu</span>
+      </div>
+    </label>
+  </div>
+
+  <div class="menu-overlay" id="menuOverlay">
+    <nav class="overlay-nav">
+      <div class="menu-links">
+        <a href="#"><i>Alfa watches</i></a><br>
+        <a href=""><i>Our Premium Collection</i></a>
+        <a href="LuxuryWatches.html"><small>Luxury Watches</small></a>
+        <a href="ClassicWatches.html"><small>Classic Watches</small></a>
+        <a href="SportiveWatches.html"><small>Sportive Watches</small></a><br>
+      <!-- <a href="Navbar.html"><i>All Watches</i></a>
+        <a href="ServiceLM.html"><i>Care and Service</i></a>-->
+      </div>
+    </nav>
+  </div>
+
+  <div class="Alfa2">
+    <a href="index.html"><img class="Alfa" src="Logo.png" alt="Logo" /></a>
+  </div> 
+
+    <!-- ✅ ADD THIS CART SECTION -->
+    <div class="nav-right">
+ <div class="Cart">
+    <button id="cartBtn">
+      <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" fill="currentColor">
+        <path d="M7 18q-.825 0-1.412-.587Q5 16.825 5 16t.588-1.413Q6.175 14 7 14q.825 0 1.413.587Q9 15.175 9 16t-.587 1.413Q7.825 18 7 18Zm10 0q-.825 0-1.412-.587Q15 16.825 15 16t.588-1.413Q16.175 14 17 14q.825 0 1.413.587Q19 15.175 19 16t-.587 1.413Q17.825 18 17 18Zm-9.9-4-.925-2H17.3l2.25-6H6.15l-.9-2H2v2h2.05L7.8 14Zm-.65-4L6.6 8h11.05l-1.2 2Z"/>
+      </svg>
+      <span class="sss">Cart</span>
+      <span id="cart-count" style="display:none; background: red; color: white; padding: 2px 6px; border-radius: 50%; margin-left: 6px; font-size: 12px;">0</span>
+    </button>
+  </div>
+  
+
+  <div class="Search">
+    <button id="searchBtn">
+      <div id="searchIcon"></div>
+      <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" height="1em" width="1em">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+      </svg>
+      <span class="sss">Search</span>
+    </button>
+  </div>
+
+</div>
+</div>
+
+<!--===========================
+    Arrow inside the input
+===============================-->
+
+
+
+<!--===========================
+       Kerikimi i Orave
+===============================-->
+  <!-- Overlay -->
+
+<div class="search-overlay" id="searchOverlay">
+  <div style="width: 100%; max-width: 700px; display: flex; flex-direction: column; align-items: center;">
+    <input type="text" placeholder="Kërko orën..." class="search-input" id="searchInput" autocomplete="off" />
+    <ul id="searchResults" class="search-results-list-custom"></ul>
+  </div>
+</div>
+
+
+<!--==========================
+      Home Page Video
+==============================-->
+ <div class="rolex">
+
+<div class="video-container">
+  <video id="intro-video" autoplay muted loop playsinline>
+    <source src="Cinematic Watch Product Video Commercial Example _ Rolex Timex Omega Samsung Apple Jewelry Amazon Ad.mp4" type="video/mp4">
+    Browseri yt nuk e përkrah videon.
+  </video>
+</div>
+ </div>
+
+
+<!--============================
+    Name of the website
+================================-->
+  <div class="hero-text hidden-scroll">
+    <h1>Alfa Accessories</h1>
+  </div>
+
+
+
+  <!--===========================
+            Collections
+  ===============================-->
+
+  <h2 class="section-title hidden-scroll">Koleksionet Premium</h2>
+  <p class="section-subtitle hidden-scroll">Çdo koleksion përfaqëson kulmin e mjeshtërisë së orëve – teknologji moderne dhe dizajn i përjetshëm.</p>
+  
+
+  <div class="card-grid">
+    <div class="collection-card hidden-scroll">
+      <img src="EALANDER-GMT-MESH-Photoroom.png" alt="Classic Watch" class="watch-img">
+      <div class="card-content">
+        <h3>Koleksioni Klasik</h3>
+        <p>Dizajne të përjetshme që kurrë nuk dalin nga moda.</p>
+        <div class="card-footer">
+          <span>Starting at 3,500€</span>
+          <a href="ClassicWatches.html">Learn More →</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="collection-card hidden-scroll">
+      <img src="tissot-tissot-prx-35mm-watch-w-white-dial-Photoroom.png" alt="Luxury Watch" class="watch-img">
+      <div class="card-content">
+        <h3>Koleksioni Luksoz</h3>
+        <p>Ora të rafinuara për koleksionistët më kërkues.</p>
+        <div class="card-footer">
+          <span>Starting at 8,200€</span>
+          <a href="LuxuryWatches.html">Learn More →</a>
+        </div>
+      </div>
+        <div class="video-background">
+     </div>
+    </div>
+    
+    <div class="collection-card hidden-scroll">
+      <img src="T1374101104100-Photoroom.png" alt="Sport Watch" class="watch-img">
+      <div class="card-content">
+        <h3>Koleksioni Sportiv</h3>
+        <p>Ora për performancë – për jetën aktive.</p>
+        <div class="card-footer">
+          <span>Starting at 4,800€</span>
+          <a href="SportiveWatches.html">Learn More →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+<!--========================
+VISION Information about the watch
+============================-->
+ <div class="container">
+    <div class="left">
+      <h4>VISION</h4>
+      <h1>We’re Changing the<br>Way the World Thinks<br>About Watches</h1>
+      <p>We believe a watch is more than just a way to tell time — it’s a statement of style, precision, and individuality. Whether crafted for tradition or designed for innovation, every timepiece tells a story.We’re here to redefine how people experience time, blending timeless craftsmanship with modern design to create watches that inspire confidence and curiosity.</p>
+    </div>
+    <div class="right">
+      <img src="GifImage.gif" alt="Car" />
+    </div>
+  </div>
+
+
+<!--==========================
+        Service Section
+==============================-->
+<section class="services-section">
+  <div class="services-content">
+    <div class="intro">
+      <span class="label">SERVICES</span>
+      <h3>We Deliver Exceptional<br>Products and Services<br>Around the World</h3>
+    </div>
+
+    <div class="details">
+      <h2>EXPERT WATCH</h2>
+      <p>
+       From precision repairs to luxury maintenance, our expert technicians provide top-tier service for all types of timepieces. Whether it's a battery replacement, strap adjustment, or a full mechanical overhaul, we treat every watch with the care and craftsmanship it deserves. Trust us to keep your time running flawlessly.
+      </p>
+      <a href="ServiceLM.html" class="read-more-btn">
+        Read More <span class="arrow">→</span>
+      </a>
+
+    </div>
+  </div>
+
+  <div class="services-image">
+    <img src="gif whhh.gif" alt="Car Image" />
+  </div>
+</section>
+
+
+<!--==========================
+Last Row Information Socials,And other stuff
+==============================-->
+ <footer class="footer">
+    <!-- 🔁 Këtu ndrysho logon dhe emrin -->
+    <div>
+      <img src="Logo.png" alt="Logo" class="logo">
+      <h3>Alfa Accessories</h3>
+    </div>
+
+    <div>
+      <h3>Rolex watches</h3>
+      <ul>
+        <li><a href="#">New watches 2025</a></li>
+        <li><a href="#">Find your Rolex</a></li>
+        <li><a href="#">Configure your Rolex</a></li>
+        <li><a href="#">Men's watches</a></li>
+        <li><a href="#">Women's watches</a></li>
+        <li><a href="#">Gold watches</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h3>The collection</h3>
+      <ul>
+        <li><a href="#">Air-King</a></li>
+        <li><a href="#">Datejust</a></li>
+        <li><a href="#">Explorer</a></li>
+        <li><a href="#">Submariner</a></li>
+        <li><a href="#">Yacht-Master</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h3>Services</h3>
+      <ul>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Your favourites</a></li>
+        <li><a href="#">File a report</a></li>
+      </ul>
+    </div>
+    
+    <div>
+      <h3>Socials</h3>
+      <ul>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">YouTube</a></li>
+      </ul>
+    </div>
+  </footer>
+
+<div class="custom-cart-overlay" id="customCartOverlay">
+  <div class="custom-cart-content">
+    <button class="custom-cart-close" id="closeCustomCart">&times;</button>
+    <h2 class="custom-cart-title">Shporta</h2>
+    <div id="customCartItems" class="cart-items-container">
+      <div id="emptyCartMessage" style="display: none; text-align: center; padding: 2rem; font-size: 1.2rem;">
+  S'keni asnjë produkt në cart.
+ 
+</div>
+
+      
+    </div>
+    <div class="custom-cart-summary">
+      <p>Nëntotali: <span id="customSubtotal">0.00 €</span></p>
+      <p>TVSH (18%): <span id="customTax">0.00 €</span></p>
+      <p>Transporti: <span id="customShipping">0.00 €</span></p>
+      <h3>Totali: <span id="customTotal">0.00 €</span></h3>
+      <button id="buyNowBtn" class=" btn confirm-btn">Buy Now</button>
+    </div>
+  </div>
+</div>
+
+
+
+<script>
+ const watches = [
+  {
+    name: "Baume Custom Timepiece Small Second",
+    image: "Audemars-Piguet-Royal-Oak-Photoroom.png",
+    link: "LuxuryWatches.html",
+    id:"baume"
+  },
+  {
+    name: "Elegant Chronograph 42mm",
+    image: "rBVaE2KF81WAG_CGAALv-zgMjAM405-Photoroom.png",
+    link: "LuxuryWatches2.html",
+    id: "elegant"
+  },
+  {
+    name: "Midnight Silver Heritage",
+    image: "06d8dda3-4891-4633-9d46-7269c205c647-Photoroom.png",
+    link: "LuxuryWatches3.html"
+  },
+    {
+    name: "Patek Philippe",
+    image: "FC-115-STOCK-300x487-Photoroom.png",
+    link: "ClassicWatches.html"
+  },
+    {
+    name: "Audemars Piguet",
+    image: "classic-black-and-stainless-steel-best-casual-watches-for-men-with-brown-leather-straps-Photoroom.png",
+    link: "ClassicWatches2.html"
+  },
+    {
+    name: "Jaeger-LeCoultre",
+    image: "FCsmartwatch_1024x1024-Photoroom.png",
+    link: "ClassicWatches3.html"
+  },
+    {
+    name: "Richard Mille",
+    image: "pic1774211-rl-01-Photoroom.png",
+    link: "SportiveWatches.html"
+  },
+    {
+    name: "Garmin Fenix 7S",
+    image: "450798-Product-0-I-638719081811105428_600x600-Photoroom.png",
+    link: "SportiveWatches2.html"
+  },
+    {
+    name: "Coros Pace Pro",
+    image: "450797-Product-0-I-638719055429975732_600x600-Photoroom.png",
+    link: "SportiveWatches3.html"
+  },
+    {
+    name: "Land-Dweller40",
+    image: "m127334-0001.avif",
+    link: "Watch1.html",
+    id: "elegant"
+  }
+];
+
+
+
+//============================
+//     Kerkimi i orave
+//============================ 
+
+const searchInput = document.getElementById("searchInput");
+const searchResults = document.getElementById("searchResults");
+
+
+
+searchInput.addEventListener("input", function () {
+  const query = this.value.toLowerCase().trim();
+  searchResults.innerHTML = "";
+
+  if (query === "") {
+    searchResults.style.display = "none";
+    return;
+  }
+
+  const filtered = watches.filter(watch =>
+    watch.name.toLowerCase().includes(query)
+  );
+
+  if (filtered.length === 0) {
+    return;
+  }
+
+  filtered.forEach(watch => {
+  const li = document.createElement("li");
+  li.innerHTML = `
+    <img src="${watch.image}" alt="${watch.name}" />
+    <span>${watch.name}</span>
+  `;
+  li.style.cursor = "pointer";
+  li.addEventListener("click", () => {
+    if (watch.link.startsWith("#")) {
+      // Scroll to an element on the same page
+      const target = document.querySelector(watch.link);
+      if (target) {
+        target.scrollIntoView({ behavior: "smooth", block: "center" });
+
+        // Highlight effect
+        target.style.boxShadow = "0 0 20px rgba(255,255,255,0.5)";
+        setTimeout(() => {
+          target.style.boxShadow = "";
+        }, 1500);
+
+      }
+    } else {
+      // Navigate to another page
+      window.location.href = watch.link;
+    }
+
+    // Close overlay and clear input
+    searchResults.style.display = "none";
+    searchInput.value = "";
+  });
+
+  searchResults.appendChild(li);
+});
+
+
+  searchResults.style.display = "block";
+});
+
+
+//=======================
+//   Down scrollnavbar
+//========================
+const navbar = document.getElementById('navbar');
+  let lastScroll = window.scrollY;
+
+  window.addEventListener('scroll', () => {
+    const currentScroll = window.scrollY;
+
+    if (currentScroll > lastScroll && currentScroll > 50) {
+      // Scrolling down
+      navbar.classList.add('hidden');
+    } else {
+      // Scrolling up
+      navbar.classList.remove('hidden');
+    }
+
+    lastScroll = currentScroll;
+  });
+
+
+
+//=============================
+//      Menu Function
+//=============================
+
+
+  
+
+</script>
+<script src="index.js"></script>
+
+
+
+
+</body>
+</html>

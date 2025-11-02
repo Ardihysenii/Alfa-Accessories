@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<Style>
+/*=========================
+    Back Home Button css
+===========================*/
+ /* From Uiverse.io by Jedi-hongbin */ 
+button {
+ display: flex;
+ height: 3em;
+ width: 100px;
+ align-items: center;
+ justify-content: center;
+ background-color: #eeeeee4b;
+ border-radius: 3px;
+ letter-spacing: 1px;
+ transition: all 0.2s linear;
+ cursor: pointer;
+ border: none;
+ background: #fff;
+ position: fixed;
+}
+
+button > svg {
+ margin-right: 5px;
+ margin-left: 5px;
+ font-size: 20px;
+ transition: all 0.4s ease-in;
+}
+
+button:hover > svg {
+ font-size: 1.2em;
+ transform: translateX(-5px);
+}
+
+button:hover {
+ box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
+ transform: translateY(-2px);
+}
+
+/*===========================
+      Our Journey
+=============================*/
+.journey-section {
+  padding: 80px 20px;
+  text-align: center;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #fff;
+}
+
+.journey-title {
+  font-size: 2.5rem;
+  font-weight: 500;
+  letter-spacing: 5px;
+  margin-bottom: 30px;
+}
+
+.journey-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+  max-width: 700px;
+  margin: 0 auto;
+}
+/*============================
+      Mission Section      
+==============================*/
+.mission-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 60px 100px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  gap: 40px;
+  background-color: #fff;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.mission-content {
+  flex: 1;
+  max-width: 50%;
+  border-left: 2px solid black;
+  padding-left: 20px;
+}
+
+.mission-subtitle {
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.mission-title {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.mission-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+.mission-image img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+.mission-image {
+  display: none;
+}
+
+/* Show image on screens wider than 768px (desktop) */
+@media (min-width: 768px) {
+  .mission-image {
+    display: block;
+    width: 300px; /* or any size you want */
+  }
+}
+.mission-content {
+  flex: 1;
+  max-width: 50%;
+  border-left: 2px solid black;
+  padding-left: 20px;
+}
+
+/* Fix for mobile screens */
+@media (max-width: 768px) {
+  .mission-section {
+    flex-direction: column;        /* Stack vertically */
+    padding: 40px 20px;
+  }
+
+  .mission-content {
+    max-width: 100%;               /* Full width */
+    border-left: none;             /* Remove border on mobile */
+    padding-left: 0;
+    text-align: left;              /* Clean alignment */
+  }
+
+  .mission-image {
+    display: none;                 /* Optional: hide image on mobile */
+  }
+}
+
+
+/*============================
+      Info Section
+==============================*/
+.info-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 40px;
+  gap: 60px;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.info-image img {
+  max-width: 100%;
+  height: auto;
+  width: 500px;
+}
+
+.info-text {
+  max-width: 500px;
+}
+
+.info-text h2 {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+
+.info-text p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.read-more-btn {
+  display: inline-block;
+  padding: 10px 18px;
+  border: 1px solid #000;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.read-more-btn span {
+  margin-left: 10px;
+  transition: transform 0.3s ease;
+}
+
+.read-more-btn:hover span {
+  transform: translateX(5px);
+}
+
+/*============================
+     Preception Section
+==============================*/
+.perception-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 40px;
+  gap: 60px;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.perception-text {
+  max-width: 500px;
+}
+
+.perception-text h2 {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+
+.perception-text p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.perception-image img {
+  max-width: 100%;
+  height: auto;
+  width: 500px;
+}
+
+/* Reuse same button style */
+.read-more-btn {
+  display: inline-block;
+  padding: 10px 18px;
+  border: 1px solid #000;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.read-more-btn span {
+  margin-left: 10px;
+  transition: transform 0.3s ease;
+}
+
+.read-more-btn:hover span {
+  transform: translateX(5px);
+}
+/*==========================
+    Subscribe Last Part
+============================*/
+.footer {
+  padding: 60px 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #fff;
+  color: #000;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.footer-left {
+  max-width: 45%;
+}
+
+.footer .logo {
+  font-size: 18px;
+  letter-spacing: 4px;
+  font-weight: bold;
+}
+
+.footer-columns {
+  display: flex;
+  margin-top: 40px;
+  gap: 100px;
+}
+
+.footer-columns p {
+  margin: 0 0 20px 0;
+  font-size: 14px;
+}
+
+.footer-right {
+  max-width: 45%;
+}
+
+.footer-right h3 {
+  letter-spacing: 2px;
+  font-size: 16px;
+}
+
+.footer-right p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.subscribe-group {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.subscribe-group input {
+  padding: 8px;
+  flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+}
+
+.subscribe-group button {
+  background-color: #000;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.footer .checkbox {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.footer-bottom {
+  margin-top: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  flex-wrap: wrap;
+}
+
+.footer-bottom a {
+  text-decoration: underline;
+  color: black;
+}
+
+.socials i {
+  margin-left: 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .footer-left, .footer-right {
+    max-width: 100%;
+  }
+
+  .footer-columns {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+}
+
+
+
+</Style>
+
+
+
+<!--==========================
+         BODY PART
+==============================-->
+<body>
+<!--======================
+    Back Home Button
+==========================-->
+   <a href="index.html"><!-- From Uiverse.io by Jedi-hongbin --> 
+<button>
+  <svg height="16" width="16" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024"><path d="M874.690416 495.52477c0 11.2973-9.168824 20.466124-20.466124 20.466124l-604.773963 0 188.083679 188.083679c7.992021 7.992021 7.992021 20.947078 0 28.939099-4.001127 3.990894-9.240455 5.996574-14.46955 5.996574-5.239328 0-10.478655-1.995447-14.479783-5.996574l-223.00912-223.00912c-3.837398-3.837398-5.996574-9.046027-5.996574-14.46955 0-5.433756 2.159176-10.632151 5.996574-14.46955l223.019353-223.029586c7.992021-7.992021 20.957311-7.992021 28.949332 0 7.992021 8.002254 7.992021 20.957311 0 28.949332l-188.073446 188.073446 604.753497 0C865.521592 475.058646 874.690416 484.217237 874.690416 495.52477z"></path></svg>
+  <span>Back</span>
+</button></a>
+
+<!--========================
+       Our Journey
+============================-->
+<section class="journey-section">
+  <h2 class="journey-title">OUR JOURNEY</h2>
+  <p class="journey-text">
+   At the heart of every great timepiece is a story — and ours begins with a passion for precision, elegance, and innovation. From our earliest days, we set out to redefine how people experience time. What started as a vision to blend classic craftsmanship with modern design has grown into a journey of excellence, trusted by watch enthusiasts around the world.
+  </p>
+</section>
+
+<!--=========================
+       Mission Section
+=============================-->
+<section class="mission-section">
+  <div class="mission-content">
+    <h5 class="mission-subtitle">OUR MISSION</h5>
+    <h2 class="mission-title">Redefining the Way<br>We Move</h2>
+    <p class="mission-text">
+     Our mission is simple — to craft watches that transcend time. We believe a great watch is not just a tool for telling time, but a reflection of character, precision, and purpose.
+
+Every design we create is inspired by a deep respect for traditional watchmaking, infused with modern aesthetics and cutting-edge innovation.
+    </p>
+    <p class="mission-text">
+       From the first sketch to the final polish, we are driven by a commitment to quality, craftsmanship, and attention to detail.
+
+We exist to serve those who value time — not just by the hour, but by the moments that define who they are. Whether it’s a bold statement piece or a subtle daily companion, our watches are made to honor your journey, one second at a time.
+    </p>
+  </div>
+  <div class="mission-image">
+    <img src="watchmaker-at-work-stockcake.jpg" alt="Mission Photo">
+  </div>
+</section>
+<!--===========================
+       Info Section
+===============================-->
+<section class="info-section">
+  <div class="info-image">
+    <img src="1_1800.jpg" alt="Speedometer and Map">
+  </div>
+  <div class="info-text">
+    <h2>REAL-TIME<br>INFORMATION</h2>
+    <p>
+     We believe a great watch does more than tell time—it defines your attitude. At [Your Brand Name], we craft watches for modern explorers, visionaries, and everyday achievers. Inspired by innovation and driven by design, our timepieces are built to reflect confidence and purpose. Whether you're chasing deadlines or sunsets, our watches are made to keep up with your pace and make every moment count.
+    </p>
+  </div>
+</section>
+
+<!--===============================
+      Preception Section
+===================================-->
+<section class="perception-section">
+  <div class="perception-text">
+    <h2>PERCEPTION<br>ENABLED</h2>
+    <p>
+     Each piece is thoughtfully designed to complement your style and accompany you on every journey. From classic dress watches to modern chronographs, our collections embody sophistication and durability, made for those who value both form and function.
+    </p>
+  </div>
+  <div class="perception-image">
+    <img src="A_Unique_Reversible_Case_2_500@2x.jpg" alt="Perception Car">
+  </div>
+</section>
+<!--============================
+      Subscribe last part
+================================-->
+<footer class="footer">
+  <div class="footer-left">
+    <h2 class="logo">Alfa Accessories</h2>
+    <div class="footer-columns">
+      <div>
+        <p>Technology</p>
+        <p>About</p>
+        <p>Careers</p>
+      </div>
+      <div>
+        <p>Tel: 123-456-7890</p>
+        <p>Email: info@mysite.com</p>
+        <p>500 Terry Francine St<br>San Francisco, CA 94158</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-right">
+    <h3>SUBSCRIBE</h3>
+    <p>Sign up to receive Autono news and updates.</p>
+    <form>
+      <label>Email *</label>
+      <div class="subscribe-group">
+       <input type="email" id="userEmail" placeholder="Shkruaj emailin" required>
+<button id="saveEmailBtn">Ruaj Emailin</button>
+        <button type="submit">Subscribe</button>
+      </div>
+      <label class="checkbox">
+        <input type="checkbox">
+        <span>Yes, subscribe me to your newsletter. *</span>
+      </label>
+    </form>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2035 by Alfa Accessories. Powered and secured by <a href="https://www.rolex.com/en-us">Rolex</a></p>
+    <div class="socials">
+      <i class="fab fa-linkedin-in"></i>
+      <i class="fab fa-facebook-f"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-instagram"></i>
+    </div>
+  </div>
+</footer>
+
+<!-- Font Awesome CDN for icons -->
+
+
+
+
+    <Script> 
+
+//========================
+//    Subscribe 
+//========================
+
+    </Script>
+</body>
+</html>

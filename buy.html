@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Buy Watch</title>
+
+</head>
+<style>
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+}
+
+.buy-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  background: white;
+  padding: 2rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+h1, h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.watch-summary, .price-summary {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+}
+
+.watch-summary img {
+  max-width: 100px;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+.buyer-form input {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.confirm-btn {
+  width: 100%;
+  padding: 1rem;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.confirm-btn:hover {
+  background: #333;
+}
+
+.confirmation-message {
+  text-align: center;
+  padding: 2rem;
+  background-color: #e0ffe0;
+  border-radius: 8px;
+}
+</style>
+
+<body>
+  <div class="buy-container">
+    <!-- Watch Details -->
+    <div class="watch-summary" id="watchSummary">
+      <!-- Filled by JS -->
+    </div>
+
+    <!-- Total Summary -->
+    <div class="price-summary" id="priceSummary">
+      <!-- Filled by JS -->
+    </div>
+
+    <!-- Buyer Info Form -->
+    <!--<form id="buyerForm" class="buyer-form">
+      <h2>Billing Information</h2>
+
+      <input type="text" placeholder="First Name" id="firstName" required />
+      <input type="text" placeholder="Last Name" id="lastName" required />
+      <input type="email" placeholder="Email" id="email" required />
+      <input type="text" placeholder="Address" id="address" required />
+
+      <button type="submit" class="confirm-btn">Confirm Purchase</button>
+    </form>-->
+    <form id="buyerForm" class="buyer-form" action="send_email.php" method="POST">
+  <h2>Billing Information</h2>
+
+  <input type="text" name="firstName" placeholder="First Name" id="firstName" required />
+  <input type="text" name="lastName" placeholder="Last Name" id="lastName" required />
+  <input type="email" name="email" placeholder="Email" id="email" required />
+  <input type="text" name="address" placeholder="Address" id="address" required />
+
+  <button type="submit" class="confirm-btn">Confirm Purchase</button>
+</form>
+
+
+    <!-- Success Message -->
+  <div class="confirmation-message" id="confirmationMessage" style="display: none; position: relative;">
+  <div style="display: flex; justify-content: center; align-items: center; margin-top: 1rem; gap: 10px;">
+    <button id="closeBtn" style="font-size: 1.5rem; background: transparent; border: none; cursor: pointer;">✕</button>
+
+  </div>
+  <h2>Thank you for your purchase!</h2>
+  <p>Your order has been successfully placed.</p>
+</div>
+
+
+
+
+
+
+
+<script src="buy.js"></script>
+
+
+
+</body>
+</html>
